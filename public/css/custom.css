@@ -1,0 +1,19 @@
+.card-custom {
+    border: 0px;
+    margin-bottom: 30px !important;
+    border-radius: 6px !important;
+    box-shadow: 0px 3px 6px rgb(55 55 89 / 3%) !important;
+    background: #fff;
+}
+
+.form-control {
+    border-radius: 4px;
+    height: 45px;
+    border: 1px solid rgba(55, 55, 89, 0.1);
+    padding: 0px 22px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #1F2641;
+    transition: all 0.3s ease-in-out;
+    background: #ffffff;
+}
