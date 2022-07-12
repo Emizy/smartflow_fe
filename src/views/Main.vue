@@ -11,7 +11,7 @@
           <div class="row">
             <div class="col-md-12 mt-3" style="position:relative;">
               <label class="mr-sm-2 label">Email</label>
-              <el-input placeholder="Username" type="text" class="w-100"
+              <el-input placeholder="Username" type="email" class="w-100"
                         v-model="loginForm.username"></el-input>
             </div>
             <div class="col-md-12 mt-3" style="position:relative;">
@@ -267,6 +267,7 @@ export default {
         window.Bus.$emit('load-sales-record')
         this.openLogin = false
       }).catch(err => {
+        this.loading = false
         if ('detail' in err.response.data) {
           this.$message({
             type: 'warning',
