@@ -79,7 +79,7 @@
 
       </div>
     </Modal>
-    <Modal v-if="openSalesForm" :width="600" title="CREATE SALES">
+    <Modal v-if="openSalesForm" :width="600" title="CREATE SALES" @handleClose="openSalesForm = false">
       <div class="container" slot="body">
         <form v-on:submit.prevent="createSales">
           <div class="row">
@@ -127,7 +127,7 @@
 
       </div>
     </Modal>
-    <Modal v-if="openSalesEditForm" :width="600" title="UPDATE SALES">
+    <Modal v-if="openSalesEditForm" :width="600" title="UPDATE SALES" @handleClose="openSalesEditForm = false">
       <div class="container" slot="body">
         <form v-on:submit.prevent="updateSales">
           <div class="row">
